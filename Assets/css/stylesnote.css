@@ -1,0 +1,28 @@
+#image_header img {
+  width: 60px;
+  height: 60px;
+  object-fit: fill;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  
+}
+
+
+header ul{
+  display: flex;
+  border-bottom: 1px;
+}
+
+header ul li{
+  padding: 5px;
+  margin-left: 7px;
+  border: 1px #000;
+  transition: 100ms;
+  text-decoration: none;
+  /* display: block; */
+}
