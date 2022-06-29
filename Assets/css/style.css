@@ -10,12 +10,68 @@
 body{
   width: 100%;
   height: 100vh;
-  /* display: block; */
+  display: block;
   justify-content: center;
   align-items: center;
   background:#C0C0C0 ;
 }
 
+a{
+  text-decoration: none;
+  color: #000;
+  font-size: large;
+}
+
+/* ---------------header---------------- */
+#image_header img {
+  width: 60px;
+  height: 60px;
+  object-fit: fill;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.189);
+  margin-bottom: 5px;
+}
+
+
+header ul{
+  display: flex;
+  border-bottom: 1px;
+}
+
+header ul li{
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px #000;
+  transition: 100ms;
+  text-decoration: none;
+  display: block;
+}
+
+header ul li a{
+  color:#2023c1;
+  font-size: large;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+header ul li a:hover{
+  color: #fff;
+  transition: 300ms;
+}
+
+#divisor{
+  margin: 0 auto;
+  width: 60%;
+  border: 1px solid #2023c1;
+}
+
+/* ----------------container--------------------- */
 .container{
   width: 80%;
   height: 80vh;
@@ -23,14 +79,20 @@ body{
   box-shadow: 5px 5px 10px rgba(0,0,0, .212);
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #fff;
 }
 
 .form_image{
   width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6495ED;
+  background-color: #7283a7;
   padding: 1rem;
 }
 
@@ -43,4 +105,174 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 2.3rem;
+}
+
+.form-header{
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button{
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.login-button button{
+  border: none;
+  background-color: #2023c1;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #fff;
+  transition: 300ms;
+  margin-left: 80px;
+}
+
+.login-button button:hover{
+  border: none;
+  background-color: #3a3939;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 300ms;
+}
+
+.login-button a{
+  color: #fff;
+  font-weight: bold;
+  transition: 300ms;
+
+}
+
+.form-header h1::after{
+  content: '';
+  display:block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #2023c1;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+  font-size: normal;
+} 
+
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input{
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #00000060;
+}
+
+.input-box input:hover{
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+  outline: #2023c1;
+}
+
+.input-box label,
+.gender-title h6{
+  font-size: 0.80rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder{
+  color: #000000be;
+}
+
+.gender-group{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+}
+
+.gender-input{
+  display: flex;
+  align-items: center;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.gender-input input{
+  margin-left: 0.35rem;
+}
+
+.continue-button button{
+  width: 100%;
+  height: 2rem;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #2023c1;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.continue-button button:hover{
+  width: 100%;
+  height: 2rem;
+  border-radius: 25px;
+  background-color: rgb(34, 34, 34);
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+.continue-button a{
+  color: #fff;
+  font-weight: 600;
+}
+
+/* -------------RESPOSIVIDADE------------- */
+@media screen and (max-width: 1350px) {
+  .form_image{
+    display: none;
+  }
+  .container{
+    width: 50%;
+  }
+  .form{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1080px){
+  .container{
+    align-content: center;
+    width: 90%;
+    height: auto;
+
+  }
+  .input-group{
+    flex-direction: column;
+    overflow-y:scroll;
+    flex-wrap: nowrap;
+    max-height: 20rem;
+    padding-right: 3rem;
+  }
+
+  .gender-group{
+    flex-direction: column;
+  }
 }
