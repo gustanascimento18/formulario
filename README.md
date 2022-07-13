@@ -35,7 +35,7 @@
 
 <br>
 
-<img src='./img_rm/form_web.png'>
-<img src='./img_rm/form_mobile.png'>
+<img src='./img_rm/form_web.jpeg'>
+<img src='./img_rm/form_mobile.jpeg'>
 
 <br>
