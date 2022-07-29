@@ -44,6 +44,11 @@ ul li{
   cursor: pointer;
   margin-left: 30px;
 }
+
+ul li a:hover{
+  color: #7283a7;
+  transition: 200ms;
+}
 .header-button button{
   padding: 5px 15px;
   border: none;
@@ -59,6 +64,7 @@ ul li{
   align-items:center;
   margin: 0 auto;
 }
+
 .header-button a{
   color: #fff;
 }
@@ -76,6 +82,10 @@ ul li{
 }
 /* -------------------------- */
 
+.input-box label h6{
+  font-size: 0.80rem;
+  color: #000000c0;
+}
 
 .form{
   width: 80%;
@@ -90,6 +100,14 @@ ul li{
   margin-top: 20px;
   background-color: #fff;
 }
+.form form{
+width: 50%;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 2.3rem;
+margin:0 2rem 0 2rem;
+}
 
 .login-image{
   width: 50%;
@@ -97,25 +115,16 @@ ul li{
   background-color: #7283a7;
   padding: 1rem;
   display:flex;
-  padding: 1rem;
 }
 
 .login-image img{
   width: 60vh;
-  margin-top: 80px;
+  margin: 40px 0 40px 0;
 }
 
-form{
-  width: 50%;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 2.3rem;
-}
+
  h1{
   padding-bottom: 50px;
-
  }
 
 .input-box input{
@@ -126,3 +135,63 @@ form{
   box-shadow: 1px 1px 6px #00000060;
 }
 
+
+.login-form{
+  display: block;
+}
+
+label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.register strong{
+  font-size: 20px;
+}
+
+.button-login{
+  margin-bottom: 30px;
+  width: 150px;
+  font: bold 20px;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #2023c1;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  color: #fff;
+  font-size: large;
+  font-weight:400 ;
+}
+
+.button-login:hover{
+  border-radius: 20px;
+}
+
+.button-login a{
+  color: #fff;
+  font-weight: 600;
+  font: bold;
+}
+
+ .login-with img{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  width: 0.75cm;
+  height: 0.75cm;
+  transition: 300ms;
+}
+
+h1::after{
+  content: '';
+  display:block;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #2023c1;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+  font-size: normal;
+}
