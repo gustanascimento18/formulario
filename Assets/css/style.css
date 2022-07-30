@@ -38,27 +38,22 @@ header{
 }
 
 
-ul{
+/* ul{
   display: flex;
-}
+} */
 
 ul li{
+  display: inline-block;
   padding: 5px;
-  margin-left: 20px;
+  margin-left: 30px;
   transition: 100ms;
   text-decoration: none;
   list-style: none;
 }
 
-ul li a{
-  color:#2023c1;
-  font-size: large;
-  font-weight: 600;
-}
-
 ul li a:hover{
-  color: #fff;
-  transition: 300ms;
+  color: #7283a7;;
+  transition: 200ms;
 }
 
 .header-button button{
