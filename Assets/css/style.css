@@ -82,10 +82,16 @@ ul li a:hover{
 }
 
 #divisor{
-  margin: 0 auto;
+  content: '';
+  display:block;
+  width: 50%;
+  height: 0.2rem;
+  background-color: #2023c1;
+  margin: auto;
   margin-top: 15px;
-  width: 60%;
-  border: 1px solid #2023c1;
+  justify-items: center;
+  border-radius: 10px;
+  font-size: normal;
 }
 
 /* ----------------container--------------------- */

@@ -22,7 +22,7 @@ body{
   background:#C0C0C0 ;
 }
 
-/* ------------------- */
+/* --------HEADER----------- */
 
 #image_header img {
   width: 40px;
@@ -76,12 +76,36 @@ ul li a:hover{
 }
 
 #divisor{
-  margin: 0 auto;
+  content: '';
+  display:block;
+  width: 50%;
+  height: 0.2rem;
+  background-color: #2023c1;
+  margin: auto;
   margin-top: 15px;
-  border: 1px solid #2023c1;
-  width: 60%;
+  justify-items: center;
+  border-radius: 10px;
+  font-size: normal;
 }
 /* -------------------------- */
+h1::after{
+  content: '';
+  display:block;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #2023c1;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+  font-size: normal;
+}
+
+.form form{
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
 
 .input-box label h6{
   font-size: 0.80rem;
@@ -103,11 +127,9 @@ ul li a:hover{
 }
 .form form{
 width: 50%;
-justify-content: center;
-align-items: center;
 flex-direction: column;
 padding: 2.3rem;
-margin:0 2rem 0 2rem;
+margin:auto;
 }
 
 .login-image{
@@ -124,9 +146,9 @@ margin:0 2rem 0 2rem;
 }
 
 
- h1{
-  padding-bottom: 50px;
- }
+h1{
+ padding-bottom: 50px;
+}
 
 .input-box input{
   padding: 0.3rem 0.4rem;
@@ -136,6 +158,9 @@ margin:0 2rem 0 2rem;
   box-shadow: 1px 1px 6px #00000060;
 }
 
+.input-box input:hover{
+  background-color: #eeeeee75;
+}
 
 .login-form{
   display: block;
@@ -149,6 +174,9 @@ label{
 
 .register strong{
   font-size: 20px;
+}
+.register strong:hover{
+  text-decoration: underline;
 }
 
 .button-login{
@@ -185,14 +213,47 @@ label{
   transition: 300ms;
 }
 
-h1::after{
-  content: '';
-  display:block;
-  width: 4rem;
-  height: 0.3rem;
-  background-color: #2023c1;
-  margin: 0 auto;
-  position: absolute;
-  border-radius: 10px;
-  font-size: normal;
+
+/* -----------------RESPOSIVIDADE----------------- */
+
+@media screen and (max-width: 1180px) {
+  .login-image{
+    display: none;
+  }
+  .form{
+    width: 90%;
+    height: 600px;
+  }
+  form{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:600px){
+  header{
+    padding: 10px;
+  }
+  ul li a{
+    margin:0;
+    font-size: small;
+  }
+  ul li{
+    margin-left:15px;
+    padding: 0;
+  }
+  .header-button button{
+    padding:2px 8px;
+    margin:0;
+  }
+  #image_header img{
+    display: flex;
+  }
+  form{
+    width: 100%;
+  }
+
+  .form{
+    width: 90%;
+    height: 600px;
+  }
 }
