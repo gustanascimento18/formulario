@@ -2,7 +2,7 @@
 <p align="center"> Projeto desenvolvido com o objetivo de aprimorar os conceitos e aprendizados em HTML5 e CSS3. </p>
 
 <div align="center">
-<video width:10% src="./img_rm/form-video.mp4"></video>
+<video src="./img_rm/form-video.mp4"></video>
 </div>
 
 ## 📕 Índice
@@ -40,7 +40,8 @@
 <br>
 
 <div align="center" display="flex">
-<img src='./img_rm/form_web.jpeg'>
+<img src='./img_rm/formulario-sub.jpeg'>
+<img src='./img_rm/formulario-login.jpeg'>
 <img src='./img_rm/form-mobile.jpeg'>
 <img src='./img_rm/form-tablet.jpeg'>
 </div>
