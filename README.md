@@ -1,6 +1,10 @@
 <h1 align="center"> Formulário</h1>
 <p align="center"> Projeto desenvolvido com o objetivo de aprimorar os conceitos e aprendizados em HTML5 e CSS3. </p>
 
+<div align="center">
+<video width:10% src="./img_rm/form-video.mp4"></video>
+</div>
+
 ## 📕 Índice
 
 - [📋 Sobre](#Sobre)
@@ -35,7 +39,10 @@
 
 <br>
 
+<div align="center" display="flex">
 <img src='./img_rm/form_web.jpeg'>
-<img src='./img_rm/form_mobile.jpeg'>
+<img src='./img_rm/form-mobile.jpeg'>
+<img src='./img_rm/form-tablet.jpeg'>
+</div>
 
 <br>
